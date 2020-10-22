@@ -1,0 +1,41 @@
+<html lang="en">
+
+    <head>
+        <title>percobaan </title>
+        <script>
+            function simpan() {
+                var x = document.buku;
+                var nama = x.nama.value;
+                var hp = x.no.value;
+                var t = "anda harus mengisi data"
+                if (nama == "") {
+                    t = t + "nama ,";
+                } if (hp == "") {
+                    t = t + "Nomor Hp ,";
+                } if (t == "anda harus mengisi data") {
+                    alert("Semua data sudah tersimpan")
+                } else {
+                    alert(t)
+                }
+
+            }
+
+        </script>
+    </head>
+
+<body>
+    <div align="center">
+        <form name="buku">
+            Input Nama Anda : <br>
+            <input type="text" name="nama">
+            <br>
+            Input Nomor Hp Anda : <br>
+            <input type="text" name="no">
+            <br>
+            <input type="submit" value="selesai" onclick="simpan()">
+            <input type="reset" value="batal">
+        </form>
+    </div>
+</body>
+
+</html>
