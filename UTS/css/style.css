@@ -1,124 +1,159 @@
-
-
-
-
-@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+* {
   padding: 0;
   margin: 0;
   list-style: none;
   text-decoration: none;
-  font-family: 'Itim', cursive;
+  font-family: "Itim", cursive;
+}
+.container {
+  margin-left: 250px;
+  margin-top: 70px;
+}
+.card {
+  margin: 20px;
+  padding: 15px;
+  box-shadow: 0px 0px 25px -7px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  background-color: white;
+}
+.sidebar li {
+  margin: 4px 10px;
+}
+li a{
+  display: block;
+  text-decoration: none;
+  width: 200px;
+  color: #323232;
+  padding: 10px;
+  font-size: 1.1rem;
+}
+li a:hover{
+  background-color: #f2f2f2;
+}
+li a.active{
+  display: block;
+  text-decoration: none;
+  width: 200px;
+  color: #fff;
+  background: #1572e8;
+  border-radius: 5px;
+  padding: 10px;
+}
+.bg-primary {
+  background: #1572e8;
+  color: white !important;
+}
+.bg-white {
+  box-shadow: 0px 0px 25px -7px rgba(0, 0, 0, 0.25);
+  background: #fff;
+  color: #323232;
+}
+.mt-10 {
+  margin-top: 20px !important;
+}
+.ma-10 {
+  margin: 10px;
+}
+.pa-10 {
+  padding: 20px;
+}
+.radius-5 {
+  border-radius: 5px;
 }
 body {
-    background-image: url(bck.jpg);
-  font-family: 'Roboto', sans-serif;
+  /* background-image: url(bck.jpg); */
+  font-family: "Roboto", sans-serif;
 }
 .sidebar {
-  position: fixed;
-  left: -250px;
+  top: 0;
+  position: absolute;
+  left: 0;
   width: 250px;
   height: 100%;
-  background: #0e20a5;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
-.sidebar header {
+.sidenav-header {
   font-size: 22px;
-  color: white;
   line-height: 70px;
   text-align: center;
-  background: #063146;
   user-select: none;
 }
-.sidebar ul a{
-  display: block;
-  height: 100%;
+.topbar {
+  position: absolute;
+  top: 0;
   width: 100%;
-  line-height: 65px;
-  font-size: 20px;
-  color: white;
-  padding-left: 40px;
-  box-sizing: border-box;
-  border-bottom: 1px solid black;
-  border-top: 1px solid rgba(255,255,255,.1);
-  transition: 2s;
+  height: 70px;
+  background: #1572e8;
 }
-ul li:hover a{
-  padding-left: 50px;
-}
-.sidebar ul a i{
-  margin-right: 16px;
-}
-#check{
+#check {
   display: none;
 }
-label #btn,label #cancel{
+label #btn,
+label #cancel {
   position: absolute;
   background: #989999;
   border-radius: 3px;
   cursor: pointer;
 }
-label #btn{
+label #btn {
   left: 40px;
   top: 25px;
   font-size: 35px;
   color: white;
   padding: 6px 12px;
-  transition: all .5s;
+  transition: all 0.5s;
 }
-label #cancel{
+label #cancel {
   z-index: 1111;
   left: -195px;
   top: 17px;
   font-size: 30px;
   color: #0a5275;
   padding: 4px 9px;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
-#check:checked ~ .sidebar{
+#check:checked ~ .sidebar {
   left: 0;
 }
-#check:checked ~ label #btn{
+#check:checked ~ label #btn {
   left: 250px;
   opacity: 0;
   pointer-events: none;
 }
-#check:checked ~ label #cancel{
+#check:checked ~ label #cancel {
   left: 195px;
 }
-#check:checked ~ section{
+#check:checked ~ section {
   margin-left: 250px;
 }
-.databrg{
-    padding: 0;
-
-    width: 300px;
-    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 3);
-    background-size:cover ;
-    background: #0e20a5;
-    background-position: center;
-    padding: 20px;
-    margin: 8% auto 0;
-    text-align: center;
-
-
+.databrg {
+  padding: 0;
+  width: 300px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 3);
+  background-size: cover;
+  background: #0e20a5;
+  background-position: center;
+  padding: 20px;
+  margin: 8% auto 0;
+  text-align: center;
 }
 .input-box {
-    border-radius: 20px;
-    padding: 10px;
-    margin: 10px 0;
-    width: 90%;
-    border: 1px solid #999;
-    outline: none;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px 0;
+  width: 90%;
+  border: 1px solid #999;
+  outline: none;
 }
 button {
-    color:black;
-    width: 25%;
-    padding: 10px;
-    border-radius: 20px;
-    font-size: 15px;
-    margin: 10px 0;
-    border: none;
-    outline: none;
-    cursor: pointer;
+  color: black;
+  width: 25%;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 15px;
+  margin: 10px 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
