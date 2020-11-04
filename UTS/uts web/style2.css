@@ -1,25 +1,19 @@
-
-
-
-
-@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 *{
   padding: 0;
   margin: 0;
   list-style: none;
   text-decoration: none;
-  font-family: 'Itim', cursive;
+  font-family: 'Montserrat', sans-serif;
 }
-body {
-    background-image: url(bck.jpg);
-  font-family: 'Roboto', sans-serif;
+body{
 }
 .sidebar {
   position: fixed;
   left: -250px;
   width: 250px;
   height: 100%;
-  background: #0e20a5;
+  background: grey;
   transition: all .5s ease;
 }
 .sidebar header {
@@ -95,13 +89,11 @@ label #cancel{
     width: 300px;
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 3);
     background-size:cover ;
-    background: #0e20a5;
+    background:grey;
     background-position: center;
     padding: 20px;
     margin: 8% auto 0;
     text-align: center;
-
-
 }
 .input-box {
     border-radius: 20px;

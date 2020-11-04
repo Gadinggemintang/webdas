@@ -1,33 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 body {
-    background-image:url(bck.jpg) ;
     padding: 0;
     margin: 0;
-    font-family: 'Righteous', cursive;
-    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    background-size: 400%;
+    background: url(bgfix.png);
     background-position: center;
 }
-.Register-Form ::placeholder{
+.register-form ::placeholder{
     @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
     font-family: 'Righteous', cursive;
 }
-.Register-Form .sign{
+.login-form ::placeholder{
+    @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+    font-family: 'Righteous', cursive;
+}
+.register-form .sign{
     @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
     font-family: 'Ubuntu Condensed', sans-serif;
-
 }
-.Register-Form {
+.login-form .sign{
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+.register-form {
     width: 300px;
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 3);
     background: #fff;
     padding: 20px;
     margin: 8% auto 0;
     text-align: center;
-
 }
-.Register-Form h1{
+.login-form {
+    width: 300px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 3);
+    background: #fff;
+    padding: 20px;
+    margin: 8% auto 0;
+    text-align: center;
+}
+.register-form h1{
+    color:salmon;
+    margin-bottom: 30px ;
+}
+.login-form h1{
     color:salmon;
     margin-bottom: 30px ;
 }
@@ -55,7 +71,6 @@ button {
 }
 a {
     text-decoration: none;
-
 }
 hr {
     margin-top: 20px;
