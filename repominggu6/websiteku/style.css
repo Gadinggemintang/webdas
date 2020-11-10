@@ -1,0 +1,55 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital@1&display=swap');
+body{
+    font-family: 'Barlow', sans-serif;
+    background: url(bgg.jpg);
+    color: white;
+}
+header{
+    text-align: center;
+}
+
+img {
+    margin: 0 auto;
+    width: 140;
+    height: 200;
+    border-radius: 50%;
+}
+.content {
+    text-align: center;
+}
+.navbar{
+    text-align: right;
+}
+a{
+    transition: 2s;
+    text-decoration: none;
+    color: #fff;
+    background-color: #125a83;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 7px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 17px 0 rgba(0, 0, 0, 0.17);
+}
+a.active {
+    transition: 2s;
+    text-decoration: none ;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0.2, 0.2);
+}
+table, td, th, tr{
+    border: 2px solid #30c4ee;
+    color: #ffffff;
+    width: 600px;
+    background-color: #128fc8;
+}
+table{
+    margin-right: auto;
+    margin-left: auto;
+}
+div.video{
+    color: #fff;
+    width: fit-content;
+    margin-left: auto; margin-right: auto; 
+}
