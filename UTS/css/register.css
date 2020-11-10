@@ -47,8 +47,8 @@ body {
     border: 1px solid #999;
     outline: none;
 }
-button {
-    color: #fff;
+a.button {
+    text-decoration: none;
     width: 100%;
     padding: 10px;
     border-radius: 20px;
